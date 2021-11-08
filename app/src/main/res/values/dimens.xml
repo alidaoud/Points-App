@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="radiusStandard">10dp</dimen>
+    <dimen name="radiusLarge">16dp</dimen>
+    <dimen name="radiusXLarge">20dp</dimen>
+
+    <dimen name="paddingXSmall">4dp</dimen>
+    <dimen name="paddingSmall">6dp</dimen>
+    <dimen name="paddingStandard">12dp</dimen>
+    <dimen name="paddingLarge">16dp</dimen>
+    <dimen name="paddingXLarge">26dp</dimen>
+    <dimen name="paddingXXLarge">46dp</dimen>
+    <dimen name="paddingDrawerTopBottom">30dp</dimen>
+    <dimen name="paddingAppBarVertical">50dp</dimen>
+    <dimen name="paddingFrameLayoutTop">90dp</dimen>
+
+    <dimen name="buttonHeightStandard">50dp</dimen>
+    <dimen name="itemGridHeight">175dp</dimen>
+
+    <dimen name="txtSizeSmall">12sp</dimen>
+    <dimen name="txtSizeStandard">14sp</dimen>
+    <dimen name="txtSizeTitle">20sp</dimen>
+
+</resources>

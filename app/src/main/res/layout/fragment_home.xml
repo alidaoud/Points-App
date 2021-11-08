@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- top header container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/paddingStandard"
+            android:paddingEnd="@dimen/paddingStandard"
+            android:paddingTop="30dp"
+            android:orientation="vertical"
+            android:background="@drawable/home_top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_home"
+                android:textSize="@dimen/txtSizeTitle"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subtitle_home"
+                android:textSize="@dimen/txtSizeStandard"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <!-- padding start end vertical container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/paddingStandard"
+            android:paddingEnd="@dimen/paddingStandard"
+            android:layout_marginTop="-16dp"
+            android:orientation="vertical">
+
+            <!-- wallet balance card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+
+                android:layout_marginStart="@dimen/paddingStandard"
+                android:layout_marginEnd="@dimen/paddingStandard"
+                android:background="@drawable/bg_card_primary_dark"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_wallet_balance"
+                    android:layout_marginTop="@dimen/paddingStandard"
+                    android:layout_marginBottom="@dimen/paddingStandard"
+                    android:textSize="@dimen/txtSizeStandard"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50 Points"
+                    android:layout_marginTop="@dimen/paddingStandard"
+                    android:layout_marginBottom="@dimen/paddingStandard"
+                    android:textSize="@dimen/txtSizeTitle"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+
+                <android.widget.Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:textColor="@color/white"
+                    android:text="@string/btn_withdraw"
+                    android:textAllCaps="false"
+                    android:shadowColor="@android:color/transparent"
+                    android:background="@drawable/bg_card_primary_light"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hint_apexpay"
+                android:layout_marginTop="@dimen/paddingXXLarge"
+                android:layout_marginBottom="@dimen/paddingStandard"
+                android:textSize="@dimen/txtSizeStandard"
+                android:textColor="@color/white"/>
+
+
+            <!-- apexpay card -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="@dimen/paddingStandard"
+                android:layout_marginEnd="@dimen/paddingStandard"
+                android:background="@drawable/bg_card_primary_dark">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/paddingLarge"
+                    android:layout_marginEnd="@dimen/paddingLarge"
+                    android:layout_toStartOf="@id/imgView_sell_gift"
+                    android:text="@string/label_sell_gift_card"
+                    android:textSize="@dimen/txtSizeTitle"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+
+                <ImageView
+                    android:id="@+id/imgView_sell_gift"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/paddingLarge"
+                    android:padding="@dimen/paddingStandard"
+                    android:contentDescription="@string/label_hi_rate_cards"
+                    android:src="@drawable/ic_sell_girt_card"
+                    android:background="@drawable/bg_circle_white"/>
+
+            </RelativeLayout>
+
+            <!-- Grid Cards -->
+            <LinearLayout
+                android:id="@+id/grid_cards"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="@dimen/paddingStandard"
+                android:paddingVertical="@dimen/paddingStandard"
+                android:orientation="vertical">
+
+                <!-- First Row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/itemGridHeight"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+                    <!-- First Item - Hi rate cards -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/paddingStandard"
+                        android:padding="@dimen/paddingStandard"
+                        android:orientation="vertical"
+                        android:background="@drawable/bg_card_dark"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="@dimen/paddingStandard"
+                            android:contentDescription="@string/label_hi_rate_cards"
+                            android:src="@drawable/ic_hi_rate_cards"
+                            android:background="@drawable/bg_circle_white"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/label_hi_rate_cards"
+                            android:textSize="@dimen/txtSizeTitle"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hint_hi_rate_cards"
+                            android:textSize="@dimen/txtSizeStandard"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+                    <!-- Second Item - Today's deals -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/paddingStandard"
+                        android:padding="@dimen/paddingStandard"
+                        android:orientation="vertical"
+                        android:background="@drawable/bg_card_dark">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="@dimen/paddingStandard"
+                            android:contentDescription="@string/label_today_deals"
+                            android:src="@drawable/ic_today_deals"
+                            android:background="@drawable/bg_circle_white"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/label_today_deals"
+                            android:textSize="@dimen/txtSizeTitle"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hint_today_deals"
+                            android:textSize="@dimen/txtSizeStandard"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Second row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/itemGridHeight"
+                    android:baselineAligned="false">
+
+                    <!-- Third Item - Today's deals -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/paddingStandard"
+                        android:padding="@dimen/paddingStandard"
+                        android:orientation="vertical"
+                        android:background="@drawable/bg_card_dark"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="@dimen/paddingStandard"
+                            android:contentDescription="@string/label_hi_rate_cards"
+                            android:src="@drawable/ic_hi_rate_cards"
+                            android:background="@drawable/bg_circle_white"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/label_hi_rate_cards"
+                            android:textSize="@dimen/txtSizeTitle"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hint_hi_rate_cards"
+                            android:textSize="@dimen/txtSizeStandard"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+
+                    <!-- Fourth Item - Today's deals -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/paddingStandard"
+                        android:padding="@dimen/paddingStandard"
+                        android:orientation="vertical"
+                        android:background="@drawable/bg_card_dark"
+                        >
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="@dimen/paddingStandard"
+                            android:contentDescription="@string/label_today_deals"
+                            android:src="@drawable/ic_today_deals"
+                            android:background="@drawable/bg_circle_white"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/label_today_deals"
+                            android:textSize="@dimen/txtSizeTitle"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hint_today_deals"
+                            android:textSize="@dimen/txtSizeStandard"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

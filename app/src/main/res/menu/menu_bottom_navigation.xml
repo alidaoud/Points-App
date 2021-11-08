@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_games"
+        android:icon="@drawable/nav_home"
+        android:title="@string/title_home"/>
+
+    <item
+        android:id="@+id/nav_invite"
+        android:icon="@drawable/nav_companies"
+        android:title="@string/title_companies"/>
+
+    <item
+        android:id="@+id/inventory"
+        android:icon="@drawable/nav_withdraw"
+        android:title="@string/title_withdraw"/>
+</menu>

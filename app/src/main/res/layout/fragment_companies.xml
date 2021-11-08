@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompaniesFragment"
+    android:background="@color/bg_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- top header container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/paddingStandard"
+            android:paddingEnd="@dimen/paddingStandard"
+            android:paddingTop="30dp"
+            android:orientation="vertical"
+            android:background="@drawable/home_top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_companies"
+                android:textSize="@dimen/txtSizeTitle"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subtitle_companies"
+                android:textSize="@dimen/txtSizeStandard"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <!-- padding start end vertical container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/paddingStandard"
+            android:paddingEnd="@dimen/paddingStandard"
+            android:layout_marginTop="-16dp"
+            android:orientation="vertical">
+
+            <!-- First Item - Apple -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:paddingStart="@dimen/paddingStandard"
+                android:paddingEnd="@dimen/paddingStandard"
+                android:layout_marginBottom="@dimen/paddingStandard"
+                android:background="@drawable/bg_item_list_dark">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_five_percent"
+                        android:textSize="@dimen/txtSizeTitle"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_bonus"
+                        android:textSize="@dimen/txtSizeStandard"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00 : 55 : 32"
+                        android:textSize="@dimen/txtSizeStandard"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_secondary"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/label_apple"
+                    android:src="@drawable/logo_apple"/>
+
+            </RelativeLayout>
+
+            <!-- Second Item - Google Play -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:paddingStart="@dimen/paddingStandard"
+                android:paddingEnd="@dimen/paddingStandard"
+                android:layout_marginBottom="@dimen/paddingStandard"
+                android:background="@drawable/bg_item_list_dark">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_five_percent"
+                        android:textSize="@dimen/txtSizeTitle"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_bonus"
+                        android:textSize="@dimen/txtSizeStandard"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00 : 55 : 32"
+                        android:textSize="@dimen/txtSizeStandard"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_secondary"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/label_apple"
+                    android:src="@drawable/logo_play_store"/>
+
+            </RelativeLayout>
+
+            <!-- Third Item - Apple -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:paddingStart="@dimen/paddingStandard"
+                android:paddingEnd="@dimen/paddingStandard"
+                android:layout_marginBottom="@dimen/paddingStandard"
+                android:background="@drawable/bg_item_list_dark">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_five_percent"
+                        android:textSize="@dimen/txtSizeTitle"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_bonus"
+                        android:textSize="@dimen/txtSizeStandard"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00 : 55 : 32"
+                        android:textSize="@dimen/txtSizeStandard"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_secondary"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/label_apple"
+                    android:src="@drawable/logo_apple_2"/>
+
+            </RelativeLayout>
+
+            <!-- Fourth Item - Steam -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:paddingStart="@dimen/paddingStandard"
+                android:paddingEnd="@dimen/paddingStandard"
+                android:layout_marginBottom="@dimen/paddingStandard"
+                android:background="@drawable/bg_item_list_dark">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_five_percent"
+                        android:textSize="@dimen/txtSizeTitle"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_bonus"
+                        android:textSize="@dimen/txtSizeStandard"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00 : 55 : 32"
+                        android:textSize="@dimen/txtSizeStandard"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_secondary"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/label_apple"
+                    android:src="@drawable/logo_steam"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

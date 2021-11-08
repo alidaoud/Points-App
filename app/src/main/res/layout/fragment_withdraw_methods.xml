@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WithdrawMethodsFragment">
+
+    <!-- First Row -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/paddingStandard"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <!-- First Item - Payoneer -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="@dimen/paddingStandard"
+                android:paddingEnd="@dimen/paddingStandard"
+                android:paddingTop="@dimen/paddingSmall"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_item_list_dark">
+
+                <ImageView
+                    android:contentDescription="@string/label_payoneer"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:src="@drawable/logo_payoneer"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/paddingLarge"
+                    android:text="@string/label_payoneer"
+                    android:textSize="@dimen/txtSizeTitle"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/paddingLarge"
+                android:layout_height="0dp"/>
+
+            <!-- Second Item - PayPal -->
+           <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+               android:layout_weight="1"
+                android:paddingStart="@dimen/paddingStandard"
+                android:paddingEnd="@dimen/paddingStandard"
+               android:paddingTop="@dimen/paddingSmall"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_item_list_dark">
+
+                <ImageView
+                    android:contentDescription="@string/label_paypal"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:src="@drawable/logo_paypal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/paddingLarge"
+                    android:text="@string/label_paypal"
+                    android:textSize="@dimen/txtSizeTitle"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <!-- Second row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/paddingStandard"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <!-- First Item - Paypal -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="@dimen/paddingStandard"
+            android:paddingEnd="@dimen/paddingStandard"
+            android:paddingTop="@dimen/paddingSmall"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_item_list_dark">
+
+            <ImageView
+                android:contentDescription="@string/label_paypal"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:src="@drawable/logo_paypal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/paddingLarge"
+                android:text="@string/label_paypal"
+                android:textSize="@dimen/txtSizeTitle"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/paddingLarge"
+            android:layout_height="0dp"/>
+
+        <!-- Second Item - Payoneer -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="@dimen/paddingStandard"
+            android:paddingEnd="@dimen/paddingStandard"
+            android:paddingTop="@dimen/paddingSmall"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_item_list_dark">
+
+            <ImageView
+                android:contentDescription="@string/label_payoneer"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:src="@drawable/logo_payoneer"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/paddingLarge"
+                android:text="@string/label_payoneer"
+                android:textSize="@dimen/txtSizeTitle"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <!-- Third Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/paddingStandard"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <!-- First Item - Payoneer -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="@dimen/paddingStandard"
+            android:paddingEnd="@dimen/paddingStandard"
+            android:paddingTop="@dimen/paddingSmall"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_item_list_dark">
+
+            <ImageView
+                android:contentDescription="@string/label_payoneer"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:src="@drawable/logo_payoneer"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/paddingLarge"
+                android:text="@string/label_payoneer"
+                android:textSize="@dimen/txtSizeTitle"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/paddingLarge"
+            android:layout_height="0dp"/>
+
+        <!-- Second Item - PayPal -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="@dimen/paddingStandard"
+            android:paddingEnd="@dimen/paddingStandard"
+            android:paddingTop="@dimen/paddingSmall"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_item_list_dark">
+
+            <ImageView
+                android:contentDescription="@string/label_paypal"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:src="@drawable/logo_paypal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/paddingLarge"
+                android:text="@string/label_paypal"
+                android:textSize="@dimen/txtSizeTitle"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
